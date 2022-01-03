@@ -2591,7 +2591,6 @@ var es6_regexp_split = __webpack_require__("28a5");
   },
   methods: {
     goTo: function goTo(e, state, coef) {
-      if (state.realOffset > 0 || state.realOffset <= state.maxOffset) return false;
       var elem = this.$refs["".concat(state.id)];
       var cell = elem.firstChild.clientWidth;
       state.realOffset -= Math.floor(elem.parentNode.clientWidth / cell) * cell * coef;
